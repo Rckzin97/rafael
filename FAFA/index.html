@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projeto Mi casa</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="./loforei.png" alt="Logo">
+                <span>king designs</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        
+                            <li class="nav-item"><a class="nav-link" href="#rkz">Destaque</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#manga-container">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-container">Projetos</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1500" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="./saitama-amoled-1920x1080-10098.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./sasuke-uchiha-1920x1080-10279.png" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./pikachu-ash-ketchum-1920x1080-10900.png" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./ken-kaneki-tokyo-ghoul-1920x1080-10863.png" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        >
+
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Vendas</h5>
+                            <p class="card-text secondary-color">Temos uma variedade de animes e desenhos que relembra
+                                sua infacia disponíveis para venda, incluindo lançamentos recentes, clássicos e gêneros
+                                diversos. Entre em contato para conhecer nossa seleção e fazer seu pedido!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                                aqui</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-android2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Alugueis</h5>
+                            <p class="card-text secondary-color">Oferecemos aluguel de filmes, desenhos, mangás, gibis e
+                                muito mais, proporcionando uma variedade de opções de entretenimento para nossos
+                                clientes. Temos uma ampla seleção disponível para atender a diferentes gostos e
+                                interesses. Explore nosso catálogo e aproveite a diversão!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                                mais</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Meios de Pagamentos </h5>
+                            <p class="card-text secondary-color">Aceitamos PIX, dinheiro, cartão de crédito e oferecemos
+                                parcelamento para facilitar o processo de aluguel. Queremos garantir a comodidade dos
+                                nossos clientes ao escolher a forma de pagamento que mais lhes convém.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                                mesmo</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Contato</h5>
+                            <p class="card-text secondary-color">Estamos presentes em várias redes sociais, como Mercado
+                                Livre, Instagram (@king_designs), WhatsApp (17 991065055) e Twitter. Siga-nos nessas
+                                plataformas para ficar por dentro das novidades, promoções e interagir conosco. Estamos
+                                ansiosos para conectar com você!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Veja
+                                além</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="./goku-beast-mode-amoled-black-background-minimal-1920x1080-4946.png" alt=""
+                        class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./vegeta-dragon-ball-super-black-background-1920x1080-4956.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./broly-dragon-ball-z-black-background-1920x1080-4952.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./vegito-dragon-ball-z-neon-amoled-black-background-5k-1920x1080-5029.png" alt=""
+                        class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./son-goku-dragon-ball-z-anime-series-black-background-amoled-1920x1080-1921.jpg" alt=""
+                        class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./goku-fusion-attack-dragon-ball-z-anime-series-black-1920x1080-1920.jpg" alt=""
+                        class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Informações</h2>
+            <p class="subtitle-secondary-color text-dark">Conheça nossos destaques </p>
+        </section>
+
+        <section class="col-12">
+        <section class="row align-content-md-start">
+
+            <section class="col-12 col-md-5">
+                <p>Além dessa amostra, temos diversas outras franquias de mangás disponíveis. Cada uma delas possui
+                    histórias cativantes, personagens memoráveis e um universo único. Os mangás são uma forma de arte e
+                    entretenimento que conquistam fãs do mundo todo. Seja você um admirador de ação, romance, fantasia
+                    ou comédia, com certeza encontrará uma franquia de mangá que irá te cativar. Não deixe de explorar
+                    esse incrível universo e descobrir novas histórias para se apaixonar.</p>
+                <a href="https://getbootstrap.com/docs/5.3/components/modal/" class="btn btn-primary">Documentação
+                    Modal</a>
+            </section>
+
+            <!-- Definição do Slider -->            
+                <section class="col-12 col-md-6">
+                    <section class="carousel slide" id="#rkz" data-bs-interval="1100" data-bs-ride="carousel">
+                        <section class="carousel-indicators">
+
+                            <!-- Criação dos botões que representam as imagens-->
+                                aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </section>
+
+                        <!-- Definição do conteúdo do carrousel -->
+                        <section class="carousel-inner">
+                            <section class="carousel-item active">
+                                <img src="./black-panther-1920x1080-13195.jpg" alt="Imagem 1" class="d-block w-100">
+                                <section class="carousel-caption">
+
+                                </section>
+                            </section>
+
+                            <section class="carousel-item">
+                                <img src="./avengers-endgame-marvel-superheroes-marvel-comics-5k-1920x1080-942.jpg" alt="" class="d-block w-100">
+                                <section class="carousel-caption">
+
+
+                                </section>
+                            </section>
+
+                            <section class="carousel-item">
+                                <img src="./captain-america-avengers-endgame-worthy-thors-hammer-1920x1080-103.jpg" alt="" class="d-block w-100">
+                                <section class="carousel-caption">
+
+
+                                </section>
+                            </section>
+
+                            <section class="carousel-item">
+                                <img src="./peter-parker-action-1920x1080-13145 (1).jpeg" alt="" class="d-block w-100">
+                                <section class="carousel-caption">
+
+
+                                </section>
+                            </section>
+
+                        </section>
+
+                    </section>
+
+                </section>
+            </section>
+        </section>
+        </section>
+    
+
+    <section class="container" id="manga-container">
+        <section class="col-12" id="featured-images">
+            <section class="row g-5">
+
+                <section class="col-12 col-md-2">
+                    <a href="https://www.amazon.com.br/Seven-Deadly-Sins-18/dp/8545702132">
+
+                        <img src="./kivrin.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a href="https://www.amazon.com.br/Dragon-Ball-Super-Akira-Toriyama/dp/8542612582">
+
+                        <img src="./drgfbn.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+                <section class="col-12 col-md-2">
+                    <a href="https://mangaplus.shueisha.co.jp/titles/500003">
+
+                        <img src="./borutin.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a href="https://mugiwarasoficial.com/manga/manga-one-piece/">
+
+                        <img src="./one pice.webp" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a href="https://www.amazon.com.br/Beginning-After-End-Vol-Comic/dp/1975345649">
+
+                        <img src="./farinafdp.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a
+                        href="https://loja.skeelo.com/products/death-note-vol-01?variant=44148111442149&currency=BRL&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOor6ggtAiH6ApLxbfekw0Yh2wDBgTF3iGqLoqPjR0R5JqXigfdE1XCA">
+
+                        <img src="./baguidanoite.webp" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a href="https://www.amazon.com.br/Pok%C3%A9mon-Red-Green-Blue-1/dp/8542604903">
+
+                        <img src="./81U3yDkYrgL._SY466_.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a href="https://panini.com.br/jujutsu-kaisen-batalha-de-feiticeiros-vol-21">
+
+                        <img src="./jujtsu.webp" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a
+                        href="https://www.amazon.com.br/Attack-Titan-Vol-1-English-ebook/dp/B00CCOO1HA/ref=sr_1_2?adgrpid=127560032799&hvadid=595921338704&hvdev=c&hvlocphy=1031478&hvnetw=g&hvqmt=e&hvrand=14271149480928747071&hvtargid=kwd-778746516693&hydadcr=19640_13406330&keywords=manga+attack+on+titan&qid=1698411341&sr=8-2">
+
+                        <img src="./titan.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+                <section class="col-12 col-md-2">
+                    <a
+                        href="https://www.amazon.com.br/Naruto-Gold-38-Masashi-Kishimoto/dp/8542612221/ref=sr_1_40?keywords=manga+naruto&qid=1698411653&sr=8-40">
+
+                        <img src="./sana.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+                <section class="col-12 col-md-2">
+                    <a
+                        href="https://www.amazon.com.br/Naruto-vol-1-Masashi-Kishimoto-ebook/dp/B08HB6L1YM/ref=sr_1_16?keywords=manga+naruto&qid=1698411653&sr=8-16">
+
+                        <img src="./volumee.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-2">
+                    <a
+                        href="https://www.amazon.com.br/Dragon-Ball-Edi%C3%A7%C3%A3o-Definitiva-1/dp/854261870X/ref=pd_lpo_sccl_2/134-2102554-6186044?pd_rd_w=M6Ar4&content-id=amzn1.sym.a30de6c8-8bc4-4cea-bc41-49d24a22e2dd&pf_rd_p=a30de6c8-8bc4-4cea-bc41-49d24a22e2dd&pf_rd_r=RQSKCHEX4FJYBES92F9S&pd_rd_wg=lc6eh&pd_rd_r=ca327329-7f65-4874-97f8-28a59b3309b6&pd_rd_i=854261870X&psc=16">
+
+                        <img src="./minha bola.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+                <!-- Fim do container Informações -->
+            </section>
+        </section>
+        
+
+        <!-- FOOTER -->
+
+        <!-- Informações -->
+        <section class="col-12">
+            <h2 class="title primary-color">Footer</h2>
+            <p class="subtitle-secondary-color">Contatos</p>
+        </section>
+
+        <footer class="container-fluid bg-dark-color" id="footer">
+            <section class="container">
+                <section class="row">
+                    <!-- FOOTER TOP -->
+                    <section class="col-12" id="footer-top">
+                        <section class="row justify-content-between">
+                            <section class="col-4">
+                                <h2>
+                                    king_designs
+                                </h2>
+                            </section>
+
+                            <section class="col-12 col-md-4">
+                                <p>A loja é extremamente confiável e possui um grande prestígio no mercado de trabalho.
+                                    Sua reputação é construída com base na confiança e na qualidade dos serviços
+                                    prestados, o que a torna uma referência no setor. A loja se destaca não apenas pela
+                                    excelência de seus produtos, mas também pelo compromisso em oferecer o melhor
+                                    atendimento ao cliente. Isso a torna uma escolha confiável para muitos clientes e
+                                    profissionais do setor...</p>
+                                <a href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                                    class="btn btn-primary">Documentação Forms</a>
+                            </section>
+
+                            <section class="col-4" id="social-icons">
+                                <i class="bi bi-facebo
+                                ok"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitter"></i>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!--modal 1-->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 2-->
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 3-->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 4-->
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Bootstrap JS-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                        crossorigin="anonymous" defer></script>
+</body>
+
+</html>
